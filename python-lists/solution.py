@@ -2,7 +2,6 @@
 
 if __name__ == '__main__':
     N = int(input())
-    cmd = []
     list = []
     for i in range(0,N):
         cmd = input().split()
