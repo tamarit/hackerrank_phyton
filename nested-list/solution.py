@@ -3,8 +3,6 @@
 import sys 
 from operator import itemgetter
 if __name__ == '__main__':
-    lowest_first = sys.float_info.max
-    lowest_second = sys.float_info.max
     nss = []
     for _ in range(int(input())):
         name = input()
