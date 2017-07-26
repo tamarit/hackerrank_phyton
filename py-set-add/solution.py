@@ -5,5 +5,4 @@ if __name__ == '__main__':
     countries = set()
     for _ in range(0,n):
     	countries.add(input().strip())
-    print(list(countries))
     print(len(countries))
