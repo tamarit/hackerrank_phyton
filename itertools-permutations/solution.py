@@ -4,8 +4,8 @@ from itertools import permutations
 
 
 [word, n]  = input().split()
-for (i1,i2) in sorted(list(permutations(word, int(n)))):
-	print(i1+i2)
+for i in sorted(list(permutations(word, int(n)))):
+	print(''.join(str(x) for x in list(i)))
 
 
 
