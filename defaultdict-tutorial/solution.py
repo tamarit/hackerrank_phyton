@@ -13,9 +13,10 @@ A = readn(n)
 B = readn(m)
 d = defaultdict(list)
 for i in B:
-	for j in range(0,len(A)):
-		if i == A[j]:
-			d[i].append(j + 1)
+	if d[i] == []:
+		for j in range(0,len(A)):
+			if i == A[j]:
+				d[i].append(j + 1)
 	if d[i] == []:
 		d[i].append(-1)
 	print(' '.join(map(str, d[i])))
